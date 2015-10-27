@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" Inherits="ComplainRegistrationSystem.HomeMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+
+        <asp:ContentPlaceHolder ID="title" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        
+    </title>
+    
+    <link href="../Style/ReceptionStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    <li class="navigation_first_item">
+                        <a href="Home.aspx">Home</a>
+                    </li>
+                    
+                    <li>
+                         <a href="LoginPage.aspx">Login</a>
+                    </li>
+                                      
+                                    
+                </ul>
+
+            </div>
+            
+    <div class="clear"></div>            
+    <div class="content">
+        <asp:ContentPlaceHolder ID="contentBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+      </div>
+
+     <div class="clear"></div>   
+     <div class="footer">
+         <h2>Developed & Design By E Group</h2>
+
+     </div>      
+      </div>
+    </form>
+</body>
+</html>

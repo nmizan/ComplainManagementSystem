@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ManagerMasterPage.master.cs" Inherits="ComplainRegistrationSystem.ManagerMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+
+        <asp:ContentPlaceHolder ID="title" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </title>
+    
+    <link href="../Style/ReceptionStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+            <div class="menu">
+                <ul>
+                    
+                     <li class="navigation_first_item">
+                         <a href="Manager.aspx">Manager</a>
+                    </li>
+                    <li>
+                        <a href="ViewComplainByManager.aspx">View Complain</a>
+                    </li>
+                    <li>
+                         <a href="UserInfo.aspx">User Information</a>
+                    </li>
+                    <li>
+                         <a href="AssistantInfo.aspx">Assistant Information</a>
+                    </li>
+                    <li>
+                         <a href="ManagerChangePassword.aspx">Change Password</a>
+                    </li>
+                   <li>
+                       <asp:LinkButton ID="logoutLinkButton" runat="server" OnClick="logoutLinkButton_Click">Logout</asp:LinkButton>
+                   </li>
+                                      
+                                    
+                </ul>
+
+            </div>
+            
+    <div class="clear"></div>            
+    <div class="content">
+        <asp:ContentPlaceHolder ID="contentBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+     </div>
+
+     <div class="clear"></div>   
+     <div class="footer">
+         <h2>Developed & Design By E Group</h2>
+
+     </div>      
+      </div>
+    </form>
+</body>
+</html>
